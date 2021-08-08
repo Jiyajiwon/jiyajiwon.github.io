@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/setting.css" />
+    <link rel="stylesheet" href="css/container.css" />
+    <link rel="stylesheet" href="css/active.css" />
+    <link rel="stylesheet" href="css/todo-list.css" />
+  </head>
+
+  <body>
+    <!-------------- upper bar ------------->
+    <div class="upper-bar">
+      <div class="search_container">
+        <svg
+          style="width: 30px; height: auto"
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          ></path>
+        </svg>
+        <div>
+          <a href="www.google.com" style="text-decoration: none"
+            >go to google</a
+          >
+        </div>
+      </div>
+      <!-------------- random background-color -------->
+      <div class="color_container">
+        <button id="color_button">Click me! :)</button>
+      </div>
+      <!-------------- weather -------->
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-------------- user name ----------------->
+    <div class="user-name_container">
+      <form class="hidden" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input type="submit" value="Log In" />
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+    </div>
+    <!-------------- clock ----------------->
+    <div clss="clock_container">
+      <h2 id="clock"></h2>
+    </div>
+    <!-------------- todo list ----------------->
+    <div class="todo-list_container">
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <div class="todo-list_box">
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+    <!------------------------------------------------>
+    <script src="js/app.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list_container > input {
+  width: 700px;
+}
+
+.delete_button {
+  background-color: transparent;
+  border: transparent;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.checkbox {
+  margin: 0px 10px;
+}

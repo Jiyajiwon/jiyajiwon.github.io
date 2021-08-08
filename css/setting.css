@@ -1,0 +1,37 @@
+/***&**************** fonts ************************/
+
+@font-face {
+  font-family: "UhBeeSeulvely";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSeulvely.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-size: 20px;
+  font-family: "UhBeeSeulvely";
+}
+
+/******************* space ***********************/
+
+html,
+body {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0 0;
+}
+
+div {
+  margin: 10px;
+}
+
+input {
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
