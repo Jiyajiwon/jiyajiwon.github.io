@@ -6,7 +6,7 @@ module.exports = {
   ogImage: `static/backgroundImg.jpeg`, // Path to your in the 'static' folder
   comments: {
     utterances: {
-      repo: ``, // `jiyajiwon/jiyajiwon.github.io`,
+      repo: `jiyajiwon/jiyajiwon.github.io`, // `jiyajiwon/jiyajiwon.github.io`,
     },
   },
   ga: '0', // Google Analytics Tracking ID
@@ -14,13 +14,13 @@ module.exports = {
     name: `Jiwon Ryu`,
     bio: {
       role: `Embeded Developer`,
-      description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는'],
-      thumbnail: 'sample.png', // Path to the image in the 'asset' folder
+      description: ['who enjoys learning.', 'who believes that nothing is meaningless.', 'who pursues newness.'],
+      thumbnail: 'assets/blogThumbnail.gif', // Path to the image in the 'asset' folder
     },
     social: {
-      github: ``, // `https://github.com/jiyajiwon`,
-      linkedIn: ``, // `https://www.linkedin.com/in/jiwonryu31/`,
-      email: ``, // `jiwonryu31@gmail.com`,
+      github: `https://github.com/Jiyajiwon/jiyajiwon.github.io`, // `https://github.com/jiyajiwon`,
+      linkedIn: `https://www.linkedin.com/in/jiwonryu31/`, // `https://www.linkedin.com/in/jiwonryu31/`,
+      email: `jiwonryu31@gmail.com`, // `jiwonryu31@gmail.com`,
     },
   },
 
@@ -43,14 +43,36 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        date: '2021.02 ~',
-        activity: '개인 블로그 개발 및 운영',
+        date: '03.2021 ~',
+        activity: 'Sejong University, majoring in Intelligent Mechatronics Engineering',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
         },
       },
+      {
+        date: '12.2021 ~ 06.2023',
+        activity: 'Undergraduate Research Assistant in Intelligent Signal Processing Lab',
+        links: {
+        },
+      },
+      {
+        date: '02.2024 ~ 05.2024',
+        activity: 'New Jersey City University, majoring in Computer Science',
+        links: {
+        },
+      },
+      {
+        date: '02.2024 ~ ',
+        activity: 'Undergraduate Research Assistant in Supply Chain and Demand Lab',
+        links: {
+        },
+      },
+      {
+        date: '01.2024 ~ ',
+        activity: 'Big Data Engineering Volunteer in KACE',
+        links: {
+        },
+      },
+      
     ],
 
     projects: [
@@ -72,16 +94,7 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        title: '개발 블로그 테마 개발',
-        description:
-          '개발 블로그를 운영하는 기간이 조금씩 늘어나고 점점 많은 생각과 경험이 블로그에 쌓아가면서 제 이야기를 담고 있는 블로그를 직접 만들어보고 싶게 되었습니다. 그동안 여러 개발 블로그를 보면서 좋았던 부분과 불편했던 부분들을 바탕으로 레퍼런스를 참고하여 직접 블로그 테마를 만들게 되었습니다.',
-        techStack: ['gatsby', 'react'],
-        thumbnailUrl: 'blog.png',
-        links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
-        },
+      
       },
     ],
   },
