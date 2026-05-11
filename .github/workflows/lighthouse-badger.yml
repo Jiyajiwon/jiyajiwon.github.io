@@ -9,7 +9,7 @@
 name: "Lighthouse Badger"
 
 ########################################################################
-# DEFINE YOUR INPUTS AND TRIGGERS IN THE FOLLOWING
+# DEFINE YOUR INPUTS AND TRIGGERS IN THE FOLLOWING_
 ########################################################################
 
 # INPUTS as Secrets (env) for not manually triggered workflows
