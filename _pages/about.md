@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Incoming M.S. student in Computer Science at NYU Courant. Robot learning, manipulation, and real-world deployment.
+subtitle: Incoming M.S. student at NYU Courant interested in robot learning and manipulation.
 
 profile:
   align: right
@@ -28,19 +28,19 @@ latest_posts:
   limit:
 ---
 
-I am an incoming M.S. student in Computer Science at NYU Courant (Fall 2026), with undergraduate training at Sejong University and research internship experience in robotics and computer vision.
+I am an incoming M.S. student in Computer Science at NYU Courant (Fall 2026), with undergraduate training at Sejong University and research internship experience in robotics / computer vision.
 
-My research interests are in robot learning for manipulation: imitation learning, embodied AI, real-world policy deployment, calibration and perception, and human-in-the-loop correction. I am especially interested in the systems questions that decide whether a learned policy actually works on hardware: camera placement, coordinate frames, teleoperation quality, dataset design, action representation, runtime latency, and failure recovery.
+I want to work on robot learning for manipulation: imitation learning, real-world deployment, calibration/perception, and human-in-the-loop correction. I am especially interested in the gap between a policy that trains successfully and a robot that works reliably on hardware.
 
-During my research internship, I worked across the full real-robot pipeline: setting up Piper and SO-101 manipulator hardware, configuring Jetson-based environments and CAN communication, collecting teleoperation datasets, training and deploying smolVLA / Diffusion Policy style models, debugging multi-camera calibration, and analyzing deployment failures under viewpoint and out-of-distribution changes.
+My strongest preparation is hands-on systems work. I have worked with Piper and SO-101 arms, leader-follower teleoperation, robot demonstration collection, smolVLA / Diffusion Policy style training and deployment, multi-camera calibration, and rollout failure analysis.
 
-I am looking to develop as a graduate researcher in robot manipulation and robot learning, with a focus on methods that remain useful outside clean demonstrations: policies that can be corrected by humans, perception pipelines that survive calibration error, and experiments that expose failure modes rather than hide them.
+I am looking for a robotics lab where I can contribute to real robot experiments while developing research depth in manipulation and embodied AI.
 
-## Research Fit
+<!-- [IMAGE PLACEHOLDER: real robot setup photo with arm, cameras, and workspace] -->
 
-- **Robot learning and manipulation:** imitation learning, diffusion-policy style pipelines, VLA / VA models, and tabletop manipulation tasks.
-- **Real robot systems:** Piper and SO-101 arms, leader-follower teleoperation, Jetson Orin / Thor setups, CAN communication, RealSense cameras, and Hugging Face dataset / model workflows.
-- **Calibration and perception:** wrist and third-view cameras, ChArUco-based calibration, hand-eye calibration, extrinsic transforms, Open3D visualization, and cross-view alignment.
-- **Deployment and debugging:** real-hardware rollout, action-chunk latency, viewpoint sensitivity, OOD task setup, failure analysis, and human intervention during policy execution.
+## Research Signals
 
-For a compact overview, see my [research page](/research/) and selected [projects](/projects/).
+- Real robot manipulation pipelines: teleoperation, datasets, training, deployment.
+- Calibration and perception: wrist/scene cameras, hand-eye calibration, cross-view alignment.
+- Systems debugging: hardware/software integration, action latency, sensor dependence, failure analysis.
+- Corrective control: human intervention during policy execution on real hardware.
