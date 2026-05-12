@@ -1,25 +1,28 @@
 cv:
   name: Jiwon Ryu
-  label: Incoming M.S. Student in Computer Science, NYU Courant
   website: https://jiyajiwon.github.io
-  summary: >
-    Incoming M.S. student in Computer Science at NYU Courant (Fall 2026) with undergraduate training at Sejong University and research internship experience in robotics / computer vision. Interested in robot learning, manipulation, imitation learning, calibration, perception, real-world deployment, and human-in-the-loop correction.
 
   social_networks:
     - network: GitHub
       username: jiyajiwon
 
   sections:
+    Research Profile:
+      - bullet: Incoming M.S. student in Computer Science at NYU Courant (Fall 2026), with undergraduate training at Sejong University and research internship experience in robotics / computer vision.
+      - bullet: Interested in robot learning, manipulation, imitation learning, calibration, perception, real-world deployment, and human-in-the-loop correction.
+
     Education:
       - institution: New York University, Courant Institute of Mathematical Sciences
         location: New York, NY
-        studyType: M.S. in Computer Science
+        degree: M.S.
+        area: Computer Science
         highlights:
           - Incoming student, Fall 2026.
 
       - institution: Sejong University
         location: Seoul, South Korea
-        studyType: Undergraduate Study
+        degree: Undergraduate Study
+        area: Computer Science
         highlights:
           - Background in computer science, robotics, and computer vision.
 
@@ -29,8 +32,8 @@ cv:
         location: Seoul, South Korea
         start_date: "2026-01"
         end_date: "2026-04"
-        summary: Worked on real-robot manipulation and robot learning pipelines with Piper / SO-101 arms, camera calibration, teleoperation, dataset collection, policy training, and deployment debugging.
         highlights:
+          - Worked on real-robot manipulation and robot learning pipelines with Piper / SO-101 arms, camera calibration, teleoperation, dataset collection, policy training, and deployment debugging.
           - Adapted robot learning and calibration tooling to an AgileX Piper single-arm setup, including Piper backend support, leader-follower teleoperation loops, and calibration CLI options.
           - Set up and debugged real robot systems on Jetson hardware, including CAN communication, Piper SDK issues, SO-101 leader/follower arms, RealSense cameras, and Hugging Face data/model workflows.
           - Collected teleoperation demonstrations for manipulation tasks, trained smolVLA / Diffusion Policy style models, deployed checkpoints on hardware, and inspected rollout failures.
@@ -39,64 +42,42 @@ cv:
 
     Projects:
       - name: End-to-End Manipulation Pipeline with LeRobot and smolVLA
-        summary: Collected teleoperation datasets with SO-101 arms, uploaded data to Hugging Face, fine-tuned a pretrained smolVLA model, and evaluated learned behavior under camera and object-placement changes.
         highlights:
+          - Collected teleoperation datasets with SO-101 arms, uploaded data to Hugging Face, fine-tuned a pretrained smolVLA model, and evaluated learned behavior under camera and object-placement changes.
           - Compared fixed-view and moving-view datasets for a wet-tissue stacking task.
           - Defined a subtask-level evaluation rubric for approach, grasp, lift, move, and place.
           - Observed strong dependence on wrist-camera input and failures under randomized object placement.
 
       - name: Diffusion Policy Deployment and EE-Space Dataset Conversion
-        summary: Set up a real-robot block pick-and-place experiment, collected 100 demonstrations, started Diffusion Policy training, deployed a 40K checkpoint, and converted joint-space trajectories toward end-effector-space representations.
         highlights:
+          - Set up a real-robot block pick-and-place experiment, collected 100 demonstrations, started Diffusion Policy training, deployed a 40K checkpoint, and converted joint-space trajectories toward end-effector-space representations.
           - Investigated action-chunk latency and discontinuous deployment behavior.
           - Used forward kinematics to convert trajectory data and identified rotation-vector discontinuities.
           - Considered quaternion orientation as a more stable representation for learning.
 
       - name: Piper Calibration and Cross-View Alignment
-        summary: Adapted RAIDEN calibration tools to a Piper arm, collected calibration poses, ran ChArUco-based calibration, and visualized camera frames and RGB-D point clouds in Open3D.
         highlights:
+          - Adapted RAIDEN calibration tools to a Piper arm, collected calibration poses, ran ChArUco-based calibration, and visualized camera frames and RGB-D point clouds in Open3D.
           - Added Piper-specific backend logic where the original toolkit assumed a YAM bimanual robot.
           - Debugged board detection, marker dictionary mismatch, marker sizing, RealSense setup, and transform-chain interpretation.
           - Verified scene-camera and wrist-camera placement using base-frame, FK, and hand-eye transforms.
 
       - name: Human-in-the-Loop Joint-Delta Intervention
-        summary: Modified a Piper Diffusion Policy intervention path so a human operator could correct policy execution through joint-space delta teleoperation.
         highlights:
+          - Modified a Piper Diffusion Policy intervention path so a human operator could correct policy execution through joint-space delta teleoperation.
           - Replaced less accurate delta end-effector intervention with a joint-delta control path.
           - Reduced reliance on forced leader/follower synchronization during intervention.
           - Preserved the existing policy and recording structure while changing the corrective-control mechanism.
 
-    Skills:
-      - name: Robot Learning
-        keywords:
-          - imitation learning
-          - diffusion policy pipelines
-          - smolVLA / VLA models
-          - policy deployment
-          - OOD evaluation
-      - name: Real Robot Systems
-        keywords:
-          - Piper arm
-          - SO-101 arm
-          - leader-follower teleoperation
-          - Jetson Orin / Thor
-          - CAN communication
-          - RealSense cameras
-      - name: Calibration and Perception
-        keywords:
-          - hand-eye calibration
-          - camera extrinsics
-          - ChArUco boards
-          - Open3D visualization
-          - multi-view alignment
-      - name: Engineering Tools
-        keywords:
-          - Python
-          - PyTorch
-          - LeRobot
-          - Hugging Face Hub
-          - wandb
-          - Linux / Jetson setup
+    Technical Skills:
+      - label: Robot Learning
+        details: imitation learning, diffusion policy pipelines, smolVLA / VLA models, policy deployment, OOD evaluation
+      - label: Real Robot Systems
+        details: Piper arm, SO-101 arm, leader-follower teleoperation, Jetson Orin / Thor, CAN communication, RealSense cameras
+      - label: Calibration and Perception
+        details: hand-eye calibration, camera extrinsics, ChArUco boards, Open3D visualization, multi-view alignment
+      - label: Engineering Tools
+        details: Python, PyTorch, LeRobot, Hugging Face Hub, wandb, Linux / Jetson setup
 
     Research Interests:
       - bullet: Robot learning for manipulation, embodied AI, imitation learning, real-world deployment, calibration, perception, robustness, and human-in-the-loop correction.
