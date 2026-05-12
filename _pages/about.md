@@ -6,7 +6,7 @@ subtitle: Incoming M.S. student in Computer Science at NYU Courant. Robot learni
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: jiwonryu_profile_pic.JPG
   image_circular: false
   more_info: >
     <p>Jiwon Ryu</p>
