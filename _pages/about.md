@@ -2,33 +2,45 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Incoming M.S. student in Computer Science at NYU Courant. Robot learning, manipulation, and real-world deployment.
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Jiwon Ryu</p>
+    <p>Incoming M.S. CS student, NYU Courant</p>
+    <p>Robotics / Computer Vision background</p>
+    <p><a href="https://github.com/jiyajiwon">GitHub</a></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
+  scrollable: false
+  limit:
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: false
+  limit:
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an incoming M.S. student in Computer Science at NYU Courant (Fall 2026), with undergraduate training at Sejong University and research internship experience in robotics and computer vision.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research interests are in robot learning for manipulation: imitation learning, embodied AI, real-world policy deployment, calibration and perception, and human-in-the-loop correction. I am especially interested in the systems questions that decide whether a learned policy actually works on hardware: camera placement, coordinate frames, teleoperation quality, dataset design, action representation, runtime latency, and failure recovery.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+During my research internship, I worked across the full real-robot pipeline: setting up Piper and SO-101 manipulator hardware, configuring Jetson-based environments and CAN communication, collecting teleoperation datasets, training and deploying smolVLA / Diffusion Policy style models, debugging multi-camera calibration, and analyzing deployment failures under viewpoint and out-of-distribution changes.
+
+I am looking to develop as a graduate researcher in robot manipulation and robot learning, with a focus on methods that remain useful outside clean demonstrations: policies that can be corrected by humans, perception pipelines that survive calibration error, and experiments that expose failure modes rather than hide them.
+
+## Research Fit
+
+- **Robot learning and manipulation:** imitation learning, diffusion-policy style pipelines, VLA / VA models, and tabletop manipulation tasks.
+- **Real robot systems:** Piper and SO-101 arms, leader-follower teleoperation, Jetson Orin / Thor setups, CAN communication, RealSense cameras, and Hugging Face dataset / model workflows.
+- **Calibration and perception:** wrist and third-view cameras, ChArUco-based calibration, hand-eye calibration, extrinsic transforms, Open3D visualization, and cross-view alignment.
+- **Deployment and debugging:** real-hardware rollout, action-chunk latency, viewpoint sensitivity, OOD task setup, failure analysis, and human intervention during policy execution.
+
+For a compact overview, see my [research page](/research/) and selected [projects](/projects/).

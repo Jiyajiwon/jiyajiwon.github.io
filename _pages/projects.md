@@ -2,12 +2,13 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Selected robotics work streams from research internship and project work.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+horizontal: true
 ---
+
+These are selected work streams, not a day-by-day log. I emphasize projects that show real robot hardware/software integration, robot learning pipelines, calibration, deployment, and failure analysis.
 
 <!-- pages/projects.md -->
 <div class="projects">
@@ -39,11 +40,7 @@ horizontal: false
 
 {% else %}
 
-<!-- Display projects without categories -->
-
 {% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
 
 {% if page.horizontal %}
 
@@ -54,12 +51,12 @@ horizontal: false
     {% endfor %}
     </div>
   </div>
-  {% else %}
+{% else %}
   <div class="row row-cols-1 row-cols-md-3">
     {% for project in sorted_projects %}
       {% include projects.liquid %}
     {% endfor %}
   </div>
-  {% endif %}
+{% endif %}
 {% endif %}
 </div>
