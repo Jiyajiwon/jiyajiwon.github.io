@@ -1,14 +1,15 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: Selected robotics work streams.
+# description: Selected robotics work streams.
 nav: true
 nav_order: 2
-horizontal: true
+horizontal: false
 ---
 
-Selected work that best reflects my fit for robot learning / manipulation labs. I keep this page focused on real hardware, data, calibration, deployment, and failure analysis.
+<!--
+Selected work that best reflects my fit for robot learning / manipulation labs. I keep this page focused on real hardware, data, calibration, deployment, and failure analysis. -->
 
 <!-- pages/projects.md -->
 <div class="projects">
