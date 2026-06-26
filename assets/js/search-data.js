@@ -4,45 +4,40 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-projects",
-          title: "projects",
-          description: "Selected robotics work streams.",
+          title: "Projects",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Concise academic CV focused on robotics and real-world robot learning experience.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-calibration-and-cross-view-alignment",
-          title: 'Calibration and Cross-View Alignment',
-          description: "Adapting calibration tooling to Piper and validating wrist/scene camera geometry.",
+        },{id: "projects-teleoperation-and-policy-learning-on-piper",
+          title: 'Teleoperation and policy learning on PiPER',
+          description: "A manipulation pipeline on PiPER using LeRobot for leader-follower teleoperation, demonstration collection, and policy learning.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/calibration-cross-view-alignment/";
-            },},{id: "projects-diffusion-policy-deployment-and-failure-analysis",
-          title: 'Diffusion Policy Deployment and Failure Analysis',
-          description: "Real-robot pick-and-place data collection, checkpoint deployment, latency observation, and trajectory representation debugging.",
+              window.location.href = "/projects/1_Piper-arm-with-LeRobot/";
+            },},{id: "projects-ur5e-peg-in-hole-with-diffusion-policy",
+          title: 'UR5e peg-in-hole with diffusion policy',
+          description: "A diffusion-policy-based manipulation system for peg-in-hole on UR5e using TCP force observations",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/diffusion-policy-deployment/";
-            },},{id: "projects-human-in-the-loop-policy-correction",
-          title: 'Human-in-the-Loop Policy Correction',
-          description: "Joint-space corrective intervention for a Piper policy deployment setup.",
+              window.location.href = "/projects/2_UR5e-peg-in-hole-with-diffusion-policy/";
+            },},{id: "projects-scout-mini-capstone-project",
+          title: 'Scout Mini capstone project',
+          description: "An autonomous navigation robot for visually impaired pedestrians built on the Scout Mini platform",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/human-in-the-loop-correction/";
-            },},{id: "projects-real-robot-imitation-learning-pipeline",
-          title: 'Real Robot Imitation Learning Pipeline',
-          description: "Teleoperation, dataset collection, training, deployment, and evaluation with SO-101 arms.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/real-robot-manipulation-pipeline/";
+              window.location.href = "/projects/4_Scout-Mini-capstone-project/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
