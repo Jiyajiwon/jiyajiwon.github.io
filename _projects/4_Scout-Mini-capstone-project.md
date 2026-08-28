@@ -32,3 +32,12 @@ The central challenge of the project was enabling the robot to maintain a safe p
 To address this, I trained a segmentation model on approximately 45,000 sidewalk images and designed a data-driven localization method that estimated the robot’s lateral position by comparing the detected sidewalk boundaries with an experimentally defined safety threshold. When the robot drifted beyond this threshold, the controller adjusted its trajectory so that it returned toward the safer center region of the sidewalk. I also converted the PyTorch model into a TensorRT engine with INT8 quantization, reducing inference latency by about 65%, and integrated the full pipeline from perception to control on an NVIDIA Jetson-based robot platform.
 
 This project showed me that improving perception accuracy alone does not guarantee reliable robot behavior in the real world. What matters more is how perception is connected to localization, planning, and control so that the system can produce stable behavior end to end. It also made clear that hand-designed rules alone are not enough for handling the variability of real environments. That limitation became one of the reasons I became interested in real-world robot learning and, more broadly, in robotic systems that can adapt and generalize through interaction with their environment.
+
+<div class="row justify-content-center">
+  <div class="col-sm-7">
+        <video controls playsinline class="img-fluid rounded z-depth-1 mt-3">
+        <source src="{{ '/assets/video/navisioner_demo_video_compressed.mp4' | relative_url }}" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+  </div>
+</div>

@@ -7,7 +7,7 @@ importance: 1
 category: robotics
 ---
 
-I built a **[manipulation pipeline](https://github.com/KimEuna-916/lerobot_piper_043/tree/piper_043/src/lerobot)** on the **[PiPER arm](https://global.agilex.ai/products/piper)** by integrating the hardware into the **[LeRobot](https://github.com/huggingface/lerobot)** ecosystem, enabling leader-follower teleoperation, dataset collection, policy training, and evaluation within a unified workflow.
+I built a **[manipulation pipeline](https://github.com/sejong-rcv/lerobot_piper_043)** on the **[PiPER arm](https://global.agilex.ai/products/piper)** by integrating the hardware into the **[LeRobot](https://github.com/huggingface/lerobot)** ecosystem, enabling leader-follower teleoperation, dataset collection, policy training, and evaluation within a unified workflow.
 
 Using this pipeline, I ran manipulation experiments with both **[Diffusion Policy (DP)](https://diffusion-policy.cs.columbia.edu/)** and **[VQ-BeT](https://sjlee.cc/vq-bet/)**. For OOD generalization, I trained the policy with blocks randomly placed inside a 150 mm × 150 mm square region and tested it outside that region at deployment. In these settings, the model did not succeed, showing limited spatial generalization.
 
